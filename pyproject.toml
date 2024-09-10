@@ -3,7 +3,7 @@ name = "fr"
 version = "0.3.0"
 description = "Default template for PDM package"
 authors = [
-    {name = "rlaehgus97", email = "starkim625@gmail.com"},
+    {name = "kimpass189", email = "kimpass189@gmail.com"},
 ]
 dependencies = [
     "scikit-learn>=1.5.1",
