@@ -1,10 +1,16 @@
+import pickle
+import os
+import sklearn
+
+def get_model_path():
+    my_path = __file__
+    dir_name = os.path.dirname(my_path)
+    model_path = os.path.join(dir_name, "knn_model.pkl")
+    return model_path
+
 def knn_api(length, weight):
 #    import numpy as np
 #    from sklearn.neighbors import KNeighborsClassifier
-    import pickle
-    import os
-    import sklearn
-
     with open("knn_model.pkl", "rb") as f:
         fish_knn = pickle.load(f)
 
