@@ -16,6 +16,6 @@ def read_item(w: float, l: float):
     return {"result": result_msg}
 
 @app.get("/lr")
-def read_item(l: float):
+def fish_weight(l: float):
     weight = lr_api(l)
     return {"weight": weight}
