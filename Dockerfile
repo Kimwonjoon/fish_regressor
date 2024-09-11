@@ -7,6 +7,6 @@ WORKDIR /codes
 
 COPY src/fr/main.py /codes/
 
-RUN pip install --no-cache-dir --upgrade git+https://github.com/rlaehgus97/fish_regressor.git@0.3/cli
+RUN pip install --no-cache-dir --upgrade git+https://github.com/Kimwonjoon/fish_regressor.git@0.3/cli
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
